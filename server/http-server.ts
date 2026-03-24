@@ -102,12 +102,14 @@ app.post('/process/excel', upload.single('file'), async (req, res) => {
 });
 
 // ---------------------------------------------------------------------------
-// Start
+// Start (only for local/dev execution)
 // ---------------------------------------------------------------------------
 
-app.listen(PORT, () => {
-  console.log(`extractor-bancario server listening on http://localhost:${PORT}`);
-  console.log(`Bancos soportados: ${listSupportedBanks().join(', ')}`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`extractor-bancario server listening on http://localhost:${PORT}`);
+    console.log(`Bancos soportados: ${listSupportedBanks().join(', ')}`);
+  });
+}
 
 export default app;
