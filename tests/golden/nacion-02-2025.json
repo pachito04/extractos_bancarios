@@ -1,0 +1,10 @@
+{
+  "fixture": "banco nacion 02-2025.pdf",
+  "bank_code": "BANCO_NACION",
+  "expected_movements_count": 1,
+  "expected_saldo_final": 113994.43,
+  "expected_total_debitos": 0,
+  "expected_total_creditos": 100000,
+  "max_invalid_movements": 0,
+  "tolerance": 0.02
+}

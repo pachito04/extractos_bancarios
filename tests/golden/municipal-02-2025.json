@@ -1,0 +1,10 @@
+{
+  "fixture": "BANCO MUNICIPAL 02-2025.pdf",
+  "bank_code": "BANCO_MUNICIPAL",
+  "expected_movements_count": 73,
+  "expected_saldo_final": 237404.95,
+  "expected_total_debitos": 1393507.34,
+  "expected_total_creditos": 1009596.71,
+  "max_invalid_movements": 0,
+  "tolerance": 0.05
+}
